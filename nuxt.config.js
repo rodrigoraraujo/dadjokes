@@ -34,13 +34,24 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/proxy'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/api': {
+      target: 'https://icanhazdadjoke.com',
+      pathRewrite: { '^/api': '' }
+    }
+  },
+
   /*
    ** Build configuration
    */
