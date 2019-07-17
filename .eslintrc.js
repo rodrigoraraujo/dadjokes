@@ -11,7 +11,9 @@ module.exports = {
   // add your custom rules here
   rules: {
     semi: ['error', 'always'],
-    indent: ['warn', 2],
-    'vue/singleline-html-element-content-newline': 'off'
+    indent: ['warn', 2, { SwitchCase: 1 }],
+    'vue/singleline-html-element-content-newline': 'off',
+    'no-console': 'off',
+    'space-before-function-paren': 'off'
   }
 };

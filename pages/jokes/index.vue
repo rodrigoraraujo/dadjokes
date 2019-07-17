@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="joke in jokes" :key="joke.id">
-      <p>{{ joke }}</p>
+      <p>{{ joke.joke }}</p>
     </div>
   </div>
 </template>
