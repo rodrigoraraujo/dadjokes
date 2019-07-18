@@ -5,17 +5,13 @@
 </template>
 
 <script>
+import head from '~/mixins/head';
+
 export default {
+  mixins: [head],
   head() {
     return {
-      title: 'Welcome To Dad Jokes',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Best place for corny dad jokes'
-        }
-      ]
+      title: 'Welcome To Dad Jokes'
     };
   }
 };

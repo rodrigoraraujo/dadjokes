@@ -5,7 +5,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: 'Page not found'
+    };
+  }
+};
 </script>
 
 <style>
