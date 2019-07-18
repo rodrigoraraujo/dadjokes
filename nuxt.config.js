@@ -55,6 +55,10 @@ export default {
     }
   },
 
+  router: {
+    middleware: ['visit']
+  },
+
   /*
    ** Build configuration
    */
